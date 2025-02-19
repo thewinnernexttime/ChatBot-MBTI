@@ -1,89 +1,25 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>聊天机器人</title>
-    <style>
-        /* 基础样式 */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f7f6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            color: #333;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* 顶部标题 */
-        .header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-
-        /* 主要内容区域 */
-        .iframe-container {
-            flex-grow: 1;
-            overflow: hidden;
-        }
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        /* 页面底部 */
-        .footer {
-            background-color: #f1f1f1;
-            padding: 10px;
-            text-align: center;
-            font-size: 0.9em;
-            color: #666;
-        }
-
-        /* 响应式设计 */
-        @media (max-width: 768px) {
-            .container {
-                width: 100%;
-                margin: 10px;
-            }
-            .header {
-                font-size: 1.2em;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>聊天机器人</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            欢迎与我们的聊天机器人互动
-        </div>
-        <div class="iframe-container">
-            <iframe src="https://udify.app/chatbot/qZdKWVurnliDFEEK" allow="microphone"></iframe>
-        </div>
-        <div class="footer">
-            <p>© 2025 聊天机器人版权所有</p>
-        </div>
+  <div class="container">
+    <div class="header">
+      <h1>欢迎使用我们的聊天机器人</h1>
+      <p>请与我们的机器人进行对话，获取帮助与支持。</p>
     </div>
+    <div class="chat-container">
+      <iframe id="chatbot-frame" src="https://udify.app/chatbot/qZdKWVurnliDFEEK" frameborder="0" allow="microphone"></iframe>
+    </div>
+    <div class="footer">
+      <p>© 2025 聊天机器人平台</p>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
 </body>
 </html>
